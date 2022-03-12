@@ -11,6 +11,5 @@ class AuthorController extends Controller
     {
         $items = DB::select('select * from authors');
         return view('index', ['items' => $items]);
-        return view('index', $items);
     }
 }
